@@ -5,6 +5,7 @@
 package com.hackathon.action;
 
 import com.hackathon.api.FetchTokenApi;
+import com.hackathon.api.GetUserApi;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -12,7 +13,7 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  * @author hackathon
  */
-public class getTokenAction extends ActionSupport{
+public class GetTokenUserAction extends ActionSupport{
     @Override
     public String execute()
     {
@@ -20,6 +21,8 @@ public class getTokenAction extends ActionSupport{
         String sid = (String) context.getSession().get("sid");
         String token = FetchTokenApi.execute(sid);
         context.getSession().put("token",token);
+        String userID = GetUserApi.execute(token);
+        context.getSession().put("userID", userID);
         return null;
     }
 }

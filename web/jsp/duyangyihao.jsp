@@ -3,7 +3,7 @@
     Created on : 2013-9-15, 1:55:23
     Author     : Tongda
 --%>
-
+<%@taglib prefix="s" uri="/struts-tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
