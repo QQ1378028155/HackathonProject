@@ -30,4 +30,8 @@
                         <value>hibernate.dialect=org.hibernate.dialect.MySQLDialect</value>
                 </property>
         </bean>
+        
+        <bean id="ebaySellerLoginAction" class="com.hackathon.action.EbaySellerLoginAction">
+        </bean>
+        <bean id="getTokenAction" class="com.hackathon.action.getTokenAction"></bean>
 </beans>

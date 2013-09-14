@@ -9,7 +9,8 @@ and open the template in the editor.
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-        <package name="hackthonProject" extends="struts-default">       
-                
+        <package name="default" extends="struts-default">       
+            <action name="ebaySellerLogin" class="ebaySellerLoginAction"></action>
+            <action name="getToken" class="getTokenAction"></action>
         </package>
 </struts>
