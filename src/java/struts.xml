@@ -13,7 +13,7 @@ and open the template in the editor.
             <action name="ebaySellerLogin" class="ebaySellerLoginAction">
                     <result name="success">/jsp/index.jsp</result>
             </action>
-            <action name="getToken" class="getTokenAction"></action>
+            <action name="getTokenUser" class="getTokenUserAction"></action>
 
             <action name="getSoldItems" class="getSoldItemsAction">
                 <result name="success">/jsp/soldItems.jsp</result>
@@ -37,6 +37,8 @@ and open the template in the editor.
             <action name="showItem" class="showItemAction">
                     <result name="success">/jsp/itemDetail.jsp</result>
             </action>
-
+            <action name="addItem" class="addItemAction">
+                    <result name="success">/jsp/addItemResult.jsp</result>
+            </action>
         </package>
 </struts>
