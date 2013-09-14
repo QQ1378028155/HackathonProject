@@ -3,24 +3,19 @@
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<html>
-        <head>
-                <title>Hackathon all Items</title>
-        </head>
-        <body>
-                <table>
-                        <th>序号</th>
-                        <th>商品标题</th>
-                        <th>状态</th>
-                        <th>操作</th>
-                        <s:iterator value="#activeItemList" status="u">
-                                <tr>
-                                        <td align="center"><s:property value="#u.index+1"/></td>
-                                        <td align="center"><s:property value="getTitle()"/></td>
-                                        <td align="center"><s:property value="getSellingStatus().getListingStatus()"/></td>
-                                        <td align="center"><a href="showItem.action?itemID=<s:property value="getItemID()"/>"></td>
-                                </tr>
-                        </s:iterator>
-                </table>
-        </body>
-</html>
+
+<table>
+        <th>序号</th>
+        <th>商品标题</th>
+        <th>状态</th>
+        <th>操作</th>
+                <s:iterator value="#activeItemList" status="u">
+                <tr>
+                        <td align="center"><s:property value="#u.index+1"/></td>
+                        <td align="center"><s:property value="getTitle()"/></td>
+                        <td align="center"><s:property value="getSellingStatus().getListingStatus()"/></td>
+                        <td align="center"><a href="showItem.action?itemID=<s:property value="getItemID()"/>">查看详情</a></td>
+                </tr>
+        </s:iterator>
+</table>
+

@@ -38,4 +38,5 @@
         <bean id="showActiveItemsAction" class="com.hackathon.action.ShowActiveItemsAction"></bean>
         <bean id="showItemAction" class="com.hackathon.action.ShowItemAction"></bean>
         <bean id="addItemAction" class="com.hackathon.action.AddItemAction"></bean>
+        <bean id="showMyMessagesAction" class="com.hackathon.action.ShowMyMessagesAction"></bean>
 </beans>

@@ -15,5 +15,6 @@
         <a href="showAllItems.action">显示所有商品</a>
         <a href="showActiveItems.action">显示Active商品</a>
         <a href="toAddItem.jsp">进入添加商品页面</a>
+        <a href="showMyMessages.action">显示消息</a>
     </body>
 </html>
