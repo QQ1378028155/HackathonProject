@@ -102,18 +102,18 @@
             <ul>
  
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./listing-all.html" class="current">Sell</a>
+                <li><a href="./listing-all.jsp" class="current">Sell</a>
                  <ul>
-                        <li><a href="./listing-all.html">All Sellings</a></li>
-                        <li><a href="./sell-an-item.html">Sell an item</a></li>
-                       <li class="last"><a href="./sold.html">Shipping</a></li>
+                        <li><a href="./listing-all.jsp">All Sellings</a></li>
+                        <li><a href="./sell-an-item.jsp">Sell an item</a></li>
+                       <li class="last"><a href="./sold.jsp">Shipping</a></li>
                   </ul>
                   </li>
                 </li>
               
-                <li><a href="message.html">Message</a></li>
+                <li><a href="message.jsp">Message</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
-				 <li><a href="login.html">Sign out</a></li>
+				 <li><a href="login.jsp">Sign out</a></li>
             </ul>
         </nav><!--END: menu-->
                  
@@ -136,9 +136,9 @@
         <div class="div-right"></div>
         <!--END: side divider-->
       <ul class="nav nav-pills">
-            <li><a href="listing-all.html">All Selling</a></li>
+            <li><a href="listing-all.jsp">All Selling</a></li>
             <li class="active"><a href="listing-sell.html">Sell an item</a></li>
-            <li><a href="sold.html">Sold</a></li>
+            <li><a href="sold.jsp">Sold</a></li>
           </ul>
         <!--BEGIN: top filtrable-->
         <bh /> 

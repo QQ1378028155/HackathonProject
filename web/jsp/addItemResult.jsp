@@ -4,10 +4,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <html>
-        <head>
-                <title>Hackathon all Items</title>
-        </head>
-        <body>
+
                 <table>
                         <th>商品标题</th>
                         <th>价格</th>
@@ -20,5 +17,6 @@
                                 <td><s:property value="#finalfee"/></td>>
                         </tr>
                 </table>
-        </body>
+                               
+                        
 </html>

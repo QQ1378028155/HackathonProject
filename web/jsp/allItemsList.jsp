@@ -4,18 +4,21 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 
-<table>
-        <th>序号</th>
-        <th>商品标题</th>
-        <th>状态</th>
-        <th>操作</th>
-                <s:iterator value="#allItemList" status="u">
-                <tr>
-                        <td align="center"><s:property value="#u.index+1"/></td>
-                        <td align="center"><s:property value="getTitle()"/></td>
-                        <td align="center"><s:property value="getSellingStatus().getListingStatus()"/></td>
-                        <td align="center"><a href="showItem.action?itemID=<s:property value="getItemID()"/>">查看详情</a></td>
-                </tr>
-        </s:iterator>
-</table>
 
+   <section class="row da-thumbs portfolio filtrable clearfix">
+   <s:iterator value="#allItemList" status="u">
+            <!--BEGIN: latest blog col 1 -->
+            <article data-id="id-<s:property value="#u.index+1"/>" data-type="<s:property value="getSellingStatus().getListingStatus()"/>" class="span3">
+                <span>
+                    <img src="example/<s:property value="getSellingStatus().getListingStatus()"/>.jpg" alt="photo" />
+                    <div class="pd">
+                        <a href="example/view.jpg" class="p-view" data-rel="prettyPhoto"></a>
+                        <a href="portfolio-single.html" class="p-link"></a>
+                    </div>
+                </span>
+                   <a style="height:3px;" href="showItem.action?itemID=<s:property value="getItemID()"/>"> <s:property value="getTitle()"/></a>            
+                <p><s:property value="getSellingStatus().getListingStatus()"/></p>
+                <a href="showItem.action?itemID=<s:property value="getItemID()"/>" class="read-more">Read More ...</a>
+            </article><!--END: latest blog col 1 -->
+              </s:iterator>
+        </section>           

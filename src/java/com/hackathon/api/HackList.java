@@ -64,7 +64,9 @@ public class HackList {
                         ItemType[] itemType = api.getSellerList();
                         List<ItemType> itemList = new ArrayList();
                         for (int i = 0; i < itemType.length; i++) {
-                                itemList.add(itemType[i]);
+                            if(itemType[i].getTitle().length()>52)
+                                itemType[i].setTitle(itemType[i].getTitle().substring(0, 50)+"...");
+                            itemList.add(itemType[i]);
                         }
                         return itemList;
                 } catch (ApiException ex) {

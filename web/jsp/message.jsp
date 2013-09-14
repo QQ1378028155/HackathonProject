@@ -103,17 +103,17 @@
             <ul>
 
                 <li><a href="./index.html">Home</a></li>
-               <li><a href="./listing-all.html" >Sell</a>
+               <li><a href="./listing-all.jsp" >Sell</a>
                  <ul>
-                        <li><a href="./listing-all.html">All Sellings</a></li>
-                        <li><a href="./sell-an-item.html">Sell an item</a></li>
-                       <li class="last"><a href="./sold.html">Sold</a></li>
+                        <li><a href="./listing-all.jsp">All Sellings</a></li>
+                        <li><a href="./sell-an-item.jsp">Sell an item</a></li>
+                       <li class="last"><a href="./sold.jsp">Sold</a></li>
                   </ul>
                   </li>
                 </li>
-                <li><a href="message.html" class="current">Message</a></li>
+                <li><a href="message.jsp" class="current">Message</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
-				 <li><a href="login.html">Sign out</a></li>
+				 <li><a href="login.jsp">Sign out</a></li>
             </ul>
         </nav><!--END: menu-->
                  

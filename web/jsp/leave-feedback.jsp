@@ -9,7 +9,7 @@
         <!-- BEGIN: basic page needs -->
         
         <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
-        <title>eGO - Seller Listings</title>
+        <title>eGO - Leave a feedback</title>
         <!-- END: basic page needs -->
         
         <!-- BEGIN: css -->
@@ -101,19 +101,20 @@
         <!--BEGIN: menu-->        
         <nav id="menu">
             <ul>
-
+ 
                 <li><a href="./index.html">Home</a></li>
-               <li><a href="./listing-all.html" class="current">Sell</a>
+                <li><a href="./listing-all.jsp" class="current">Sell</a>
                  <ul>
-                        <li><a href="./listing-all.html">All Sellings</a></li>
-                           <li><a href="./sell-an-item.html">All Sell an item</a></li>
-                       <li class="last"><a href="./sold.html">Sold</a></li>
+                        <li><a href="./listing-all.jsp">All Sellings</a></li>
+                        <li><a href="./sell-an-item.jsp">Sell an item</a></li>
+                       <li class="last"><a href="./sold.jsp">Shipping</a></li>
                   </ul>
                   </li>
                 </li>
-                <li><a href="message.html">Message</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-				 <li><a href="login.html">Sign out</a></li>
+              
+                <li><a href="#">Message</a></li>
+                <li><a href="#">Inventory</a></li>
+				 <li><a href="#">Sign out</a></li>
             </ul>
         </nav><!--END: menu-->
                  
@@ -123,101 +124,106 @@
 
 <!--BEGIN: breadcrumbs -->
 <div class="container breadcrumbs">
-    <h1>All Selling</h1>
-   
-</div><!--END: breadcrumbs -->
-
+    <h1>Leave a feedback</h1>
+   <!--END: breadcrumbs -->
+</div>
 
 <!--BEGIN: container-->
 <section id="container">
     <div class="container">
 
-        <!--BEGIN: side divider-->
+       <!--BEGIN: side divider-->
         <div class="div-left"></div>
         <div class="div-right"></div>
         <!--END: side divider-->
-      <ul class="nav nav-pills">
-            <li class="active"><a href="listing-all.html">All Selling</a></li>
-            <li><a href="sell-an-item.html">Sell an item</a></li>
-          
-          <li><a href="sold.html">Sold</a></li>
-          </ul>
-        <!--BEGIN: top filtrable-->
-        <bh />
-        <ul id="filtrable">
-            <li class="current all"><a href="#">All</a></li>
-            <li class="scheduled"><a href="#">Scheduled</a></li>
-            <li class="active"><a href="#">Active</a></li>
-            <li class="sold"><a href="#">Sold</a></li>
-            <li class="unsold"><a href="#">Unsold</a></li>
-            <li class="returns"><a href="#">Returns</a></li>
-            <li class="deleted"><a href="#">Deleted</a></li>
-        </ul><!--END: top filtrable-->
-
-        <div class="clear"></div>
         
-        <section class="row da-thumbs portfolio filtrable clearfix">
+        <div class="row">
+                    
+            <section id="page-sidebar" class="alignrleft span9">
 
-            <!--BEGIN: latest blog col 1 -->
-            <article data-id="id-1" data-type="active sold" class="span3">
-                <span>
-                    <img src="example/active.jpg" alt="photo" />
-                    <div class="pd">
-                        <a href="example/view.jpg" class="p-view" data-rel="prettyPhoto"></a>
-                        <a href="portfolio-single.html" class="p-link"></a>
-                    </div>
-                </span>
-                <h3><a href="#">Caption Image</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in lacus rhoncus elit egestas luctus. Nullam at lectus augue. Ut </p>
-                <a href="#" class="read-more">Read More ...</a>
-            </article><!--END: latest blog col 1 -->
-            
-            <!--BEGIN: latest blog col 2 -->
-            <article data-id="id-2" data-type="unsold" class="span3">
-                <span>
-                    <img src="example/complate.jpg" alt="photo" />
-                    <div>
-                        <a href="example/view.jpg" class="p-view" data-rel="prettyPhoto"></a>
-                        <a href="portfolio-single.html" class="p-link"></a>
-                    </div>
-                </span>
-                <h3><a href="#">Caption Image</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in lacus rhoncus elit egestas luctus. Nullam at lectus augue. Ut </p>
-                <a href="#" class="read-more">Read More ...</a>
-            </article><!--END: latest blog col 2 -->
-            
-            <!--BEGIN: latest blog col 3 -->
-            <article data-id="id-3" data-type="returns active" class="span3">
-                <span>
-                    <img src="example/active.jpg" alt="photo" />
-                    <div>
-                        <a href="example/view.jpg" class="p-view" data-rel="prettyPhoto"></a>
-                        <a href="portfolio-single.html" class="p-link"></a>
-                    </div>
-                </span>
-                <h3><a href="#">Caption Image</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in lacus rhoncus elit egestas luctus. Nullam at lectus augue. Ut </p>
-                <a href="#" class="read-more">Read More ...</a>
-            </article><!--END: latest blog col 3 -->
-            
-           
-
-        </section>
+       
                 
-        <!--BEGIN: navigation-->
-        <div id="navigation" class="no_top">
-            <ul>
-                <li><a href="#">Previous</a></li>
-                <li><a href="#" class="current">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Next</a></li>
-            </ul>
-        </div><!--END: navigation-->
+                <!--BEGIN: commetns form-->                      
+                <form id="comment-form" method="post" />
+                    <div class="row">
+                    
+                        <p class="span4">Rate this transaction: <input type="text" id="author" name="author"  class="disabled" placeholder="Positive" disabled="" /></p>
+                        <div class="clear"></div>
+                        
+                      <p class="span4">Trading code: <input type="text" id="author" name="author"  class="required" />  </p>
+                    
+                        <p class="span9">Tell us more: <textarea id="text" name="text" rows="1" cols="1" class="required"></textarea></p>
+                        <p class="span3"><input type="submit" name="submit" value="Leave Feedback" class="button" /></p>
+                    </div>
+                    <div id="progress" class="alert alert-success" style="display:none;">Loading...</div>
+                 </form>
+                <!--END: comments form-->
+
+
+            </section>
+    
+            <!--BEGIN: sidebar left-->
+            <aside id="sidebar" class="alignright span3">
             
+                <!--BEGIN: blog categori-->
+                <section>
+                
+                    <div class="title-divider">
+                        <div class="divider-arrow"></div>                               
+                        <h4>Product</h4>             
+                    </div>
+                    
+                    <address>
+                        <strong>Product Name</strong><br />
+                        Price：<br />
+                        item#：<br />
+                       
+                      </address>
+
+                    <address>
+                        <strong>Buyyer：</strong><br />
+                        <a href="mailto:#">Unknown</a>
+                    </address>
+                        
+                </section><!--END:blog categori -->
+                
+                
+                <!--BEGIN: twitter -->
+                <section id="twitter-sidebar">
+                
+                    <div class="title-divider">
+                        <div class="divider-arrow"></div>                               
+                        <h4>Twitter</h4>             
+                    </div>
+                    
+                    <div class="twitter"></div> 
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                           //TWITTER
+                            $(".twitter").tweet({
+                                  join_text: "auto",
+                                  username: "envato",
+                                  avatar_size:0,
+                                  count: 3,
+                                  auto_join_text_default: "we said,",
+                                  auto_join_text_ed: "we",
+                                  auto_join_text_ing: "we were",
+                                  auto_join_text_reply: "we replied",
+                                  auto_join_text_url: "we were checking out",
+                                  loading_text: "loading tweets..."
+                            });
+                        });
+                    </script>
+                        
+                </section><!--END: twitter -->
+                
+            </aside><!--END: sidebar left-->
+
+        </div>
+    
+               
     </div>
 </section><!-- END: container -->
-
 
 <!--BEGIN: sub nav-->
 <section id="footer-nav">
@@ -229,7 +235,7 @@
             <div class="span8 hidden-phone">
                 <ul>
  <li><a href="./index.html">Home</a></li>
-                         </ul>
+              </ul>
             </div>
 
         </div>

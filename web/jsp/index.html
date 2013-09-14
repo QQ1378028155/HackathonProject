@@ -18,9 +18,11 @@
         <link href="css/bootstrap-responsive.css" type="text/css" rel="stylesheet" />
         <link href="css/responsive.css" type="text/css" rel="stylesheet" />
         <link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" />
+         
         <!-- END: css -->
         
         <!-- BEGIN: js -->
+      
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/google-code-prettify/prettify.js"></script> 
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
@@ -35,6 +37,29 @@
         <script type="text/javascript" src="js/jquery.elastislide.js"></script> 
         <script type="text/javascript" src="js/jquery.tweet.js"></script> 
         <script type="text/javascript" src="js/main.js"></script> 
+       <script>
+            $(function(){
+                    $('#slider').nivoSlider({
+                            controlNav: false
+                    });
+                    $('.post_slider').bxSlider({
+                            auto: false,
+                            speed : 1000
+                    });
+                    $('.clients_slider').bxSlider({
+                            auto: false,
+                            controls : false,
+                            mode: 'fade',
+                            pager: true
+                    });	
+                $('.bwWrapper').BlackAndWhite({
+                    hoverEffect : true,
+                    webworkerPath : false,
+                    responsive:true,
+                    invertHoverEffect:false
+                });
+            })
+        </script>
         <!-- END: js -->  
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
@@ -103,17 +128,17 @@
             <ul>
 
                 <li><a href="./index.html">Home</a></li>
-               <li><a href="./listing-all.html" class="current">Sell</a>
+               <li><a href="./listing-all.jsp" class="current">Sell</a>
                  <ul>
-                        <li><a href="./listing-all.html">All Sellings</a></li>
-                        <li><a href="./sell-an-item.html">Sell an item</a></li>
-                       <li class="last"><a href="./sold.html">Sold</a></li>
+                        <li><a href="./listing-all.jsp">All Sellings</a></li>
+                        <li><a href="./sell-an-item.jsp">Sell an item</a></li>
+                       <li class="last"><a href="./sold.jsp">Sold</a></li>
                   </ul>
                   </li>
                 </li>
-                <li><a href="message.html">Message</a></li>
+                <li><a href="message.jsp">Message</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
-				 <li><a href="login.html">Sign out</a></li>
+				 <li><a href="login.jsp">Sign out</a></li>
             </ul>
         </nav><!--END: menu-->
                  
@@ -127,6 +152,29 @@
    
 </div><!--END: breadcrumbs -->
 
+<!--BEGIN: slider-->
+<section class="container">
+    <div id="homeslider" class="flexslider">
+        <ul class="slides">
+
+            <li>
+              <img src="example/slider1.jpg" alt="photo" />
+              <h3><a href="#">Great design and the best ideas. Dolor sit amet, consectetur adipiscing elit.Aliquam varius sapien porttitor</a></h3>
+            </li>
+
+            <li>
+              <img src="example/slider2.jpg" alt="photo" />
+                <h3><a href="#">Great design and the best ideas Dolor sit amet, consectetur adipiscing elit. Aliquam varius sapien porttitor dui lobortis</a></h3>
+            </li>
+
+            <li>
+              <img src="example/slider3.jpg" alt="photo" />
+              <h3><a href="#">Great design and the best ideas. Dolor sit amet, consectetur adipiscing elit</a></h3>
+            </li>
+
+        </ul>
+    </div>   
+</section><!--END: slider-->
 
 <!--BEGIN: container-->
 <section id="container">
@@ -149,6 +197,20 @@
             Enjoy your <font color="#FF0000">Ebay Trip!</font>
             </p>
         </section><!--END: welcome-->
+          <div class="row last">
+            <!--BEGIN: divider arrow-->
+            <div class="title-divider span12">
+                <div class="divider-arrow"></div>                                    
+                <h3>Client</h3>    
+            </div><!--END: divider arrow-->
+        <ul id="client">
+                <li class="span3"><a href="listing-all.jsp"><img src="images/client/1.png" alt="photo" /></a></li>
+                <li class="span3"><a href="sell-an-item.jsp"><img src="images/client/2.png" alt="photo" /></a></li>
+                <li class="span3"><a href="sold.jsp"><img src="images/client/3.png" alt="photo" /></a></li>
+                <li class="span3"><a href="message.jsp"><img src="images/client/4.png" alt="photo" /></a></li>
+               
+            </ul>
+            </div>
     </div>
 </section><!-- END: container -->
 

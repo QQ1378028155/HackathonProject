@@ -22,6 +22,7 @@ public class ShowItemAction extends ActionSupport{
         ActionContext context = ActionContext.getContext();
         String token = (String) context.getSession().get("token");
         ItemType item = HackItem.execute(itemID, token);
+       
         context.put("item", item);
         return "success";
     }
