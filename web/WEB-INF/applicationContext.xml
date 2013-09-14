@@ -31,8 +31,11 @@
                 </property>
         </bean>
         
-        <bean id="ebaySellerLoginAction" class="com.hackathon.action.EbaySellerLoginAction">
-        </bean>
+        <bean id="ebaySellerLoginAction" class="com.hackathon.action.EbaySellerLoginAction"></bean>
+        <bean id="getSoldItemsAction" class="com.hackathon.action.GetSoldItemsAction"></bean>
+        <bean id="completeSaleAction" class="com.hackathon.action.CompleteSaleAction"></bean>
+        <bean id="getCompleteSaleFormAction" class="com.hackathon.action.GetCompleteSaleFormAction"/>
+        <bean id="autoFeedbackAction" class="com.hackathon.action.AutoFeedbackAction"></bean>
         <bean id="getTokenAction" class="com.hackathon.action.getTokenAction"></bean>
         <bean id="showAllItemsAction" class="com.hackathon.action.ShowAllItemsAction"></bean>
         <bean id="showActiveItemsAction" class="com.hackathon.action.ShowActiveItemsAction"></bean>
