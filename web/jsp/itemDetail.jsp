@@ -9,10 +9,12 @@
         </head>
         <body>
                 <table>
+                        <th>图片</th>
                         <th>商品标题</th>
                         <th>价格</th>
                         <th>状态</th>
                         <tr>
+                                <td align="center"><img src="<s:property value="#item.getPictureDetails().getGalleryURL()"/>"></img></td>
                                 <td align="center"><s:property value="#item.getTitle()"/></td>
                                 <td align="center"><s:property value="#item.getSellingStatus().getCurrentPrice().getValue()"/>&nbsp<s:property value="#item.getSellingStatus().getCurrentPrice().getCurrencyID()"/></td>
                                 <td align="center"><s:property value="#item.getSellingStatus().getListingStatus()"/></td>
