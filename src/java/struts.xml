@@ -24,5 +24,8 @@ and open the template in the editor.
             <action name="showItem" class="showItemAction">
                     <result name="success">/jsp/itemDetail.jsp</result>
             </action>
+            <action name="addItem" class="addItemAction">
+                    <result name="success">/jsp/addItemResult.jsp</result>
+            </action>
         </package>
 </struts>
