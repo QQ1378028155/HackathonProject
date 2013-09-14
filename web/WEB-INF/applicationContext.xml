@@ -36,7 +36,7 @@
         <bean id="completeSaleAction" class="com.hackathon.action.CompleteSaleAction"></bean>
         <bean id="getCompleteSaleFormAction" class="com.hackathon.action.GetCompleteSaleFormAction"/>
         <bean id="autoFeedbackAction" class="com.hackathon.action.AutoFeedbackAction"></bean>
-        <bean id="getTokenAction" class="com.hackathon.action.getTokenAction"></bean>
+        <bean id="getTokenUserAction" class="com.hackathon.action.GetTokenUserAction"></bean>
         <bean id="showAllItemsAction" class="com.hackathon.action.ShowAllItemsAction"></bean>
         <bean id="showActiveItemsAction" class="com.hackathon.action.ShowActiveItemsAction"></bean>
         <bean id="showItemAction" class="com.hackathon.action.ShowItemAction"></bean>

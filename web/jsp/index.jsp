@@ -18,7 +18,7 @@
         
         <a href="javascript:void(0)" onclick="ebayLogin();return false;">ebay Login</a>
         <s:action name="ebaySellerLogin"></s:action>
-        <form action="/HackathonProject/jsp/getToken.action">
+        <form action="/HackathonProject/jsp/getTokenUser.action">
             <input type="submit" value="Login"/>
         </form>
         <a href="showAllItems.action">显示所有商品</a>
