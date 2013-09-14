@@ -12,5 +12,13 @@ and open the template in the editor.
         <package name="default" extends="struts-default">       
             <action name="ebaySellerLogin" class="ebaySellerLoginAction"></action>
             <action name="getToken" class="getTokenAction"></action>
+            <action name="getSoldItems" class="getSoldItemsAction">
+                <result name="success">/jsp/soldItems.jsp</result>
+            </action>
+            <action name="completeSale" class="completeSaleAction"></action>
+            <action name="getCompleteSaleForm" class="getCompleteSaleFormAction">
+                <result name="success">/jsp/completeSaleForm.jsp</result>
+            </action>
+            <action name="autoFeedback" class="autoFeedbackAction"></action>
         </package>
 </struts>
