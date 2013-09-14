@@ -15,6 +15,16 @@ and open the template in the editor.
             </action>
             <action name="getToken" class="getTokenAction"></action>
 
+            <action name="getSoldItems" class="getSoldItemsAction">
+                <result name="success">/jsp/soldItems.jsp</result>
+            </action>
+            <action name="completeSale" class="completeSaleAction"></action>
+            <action name="getCompleteSaleForm" class="getCompleteSaleFormAction">
+                <result name="success">/jsp/completeSaleForm.jsp</result>
+            </action>
+            <action name="autoFeedback" class="autoFeedbackAction"></action>
+
+
             <action name="showAllItems" class="showAllItemsAction">
                     <result name="success">/jsp/allItemsList.jsp</result>
             </action>
@@ -27,5 +37,6 @@ and open the template in the editor.
             <action name="showItem" class="showItemAction">
                     <result name="success">/jsp/itemDetail.jsp</result>
             </action>
+
         </package>
 </struts>
