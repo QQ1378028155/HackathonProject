@@ -55,8 +55,7 @@ public class GetMyMessagesApi {
             messages = api.getReturnedMyMessages();
             List<MyMessagesMessageType> myMessagesList = new ArrayList();
             myMessagesList.addAll(Arrays.asList(messages));
-            System.out.println(messages.length);
-            System.out.println(myMessagesList.size());
+
             return myMessagesList;
             
         }catch(Exception e){

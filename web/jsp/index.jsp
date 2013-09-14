@@ -8,6 +8,15 @@
         <title>Hackathon</title>
     </head>
     <body>
+        <script>
+            function ebayLogin(){
+                var xmlHttp;
+                
+            }
+        </script>
+        
+        
+        <a href="javascript:void(0)" onclick="ebayLogin();return false;">ebay Login</a>
         <s:action name="ebaySellerLogin"></s:action>
         <form action="/HackathonProject/jsp/getTokenUser.action">
             <input type="submit" value="Login"/>

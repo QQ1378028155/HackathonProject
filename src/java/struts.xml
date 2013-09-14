@@ -34,6 +34,9 @@ and open the template in the editor.
             <action name="showMyMessages" class="showMyMessagesAction">
                     <result name="success">/jsp/myMessagesList.jsp</result>
             </action>
+            <action name="respondMessage" class="respondMessageAction">
+                    <result name="success">/jsp/myMessagesList.jsp</result>
+            </action>
             <action name="showItem" class="showItemAction">
                     <result name="success">/jsp/itemDetail.jsp</result>
             </action>
