@@ -91,8 +91,8 @@
                                                 <!--BEGIN: search-->
                                                 <form id="search" />
                                                 <p><input type="text" name="search site" value="Search..." onfocus="if (this.value == 'Search...')
-                                                                        this.value = ''" onblur="if (this.value == '')
-                                                                        this.value = 'Search...'" /></p>
+                                            this.value = ''" onblur="if (this.value == '')
+                                            this.value = 'Search...'" /></p>
                                                 <p><input type="submit" name="submit" value="" class="search-bt" /></p>
                                                 </form><!--END search-->
 
@@ -167,95 +167,94 @@
                                                         <p>
                                                                 <s:property value="#item.getSellingStatus().getListingStatus()"/>
                                                         </p>
-                                                        <blockquote>
-                                                                <p>
-                                                                        <s:property value="#finalfee"/>
-                                                                </p>
-                                                                <hr />
+                                                        <p>
+                                                                <s:property value="#item.getSellingStatus().getListingStatus()"/>
+                                                        </p>
+                                                        <hr />
 
-                                                                <ul class="meta">
-                                                                        <li><strong>Date: </strong>  07 may 2012</li>
-                                                                        <li><strong>Client: </strong>  Designmd</li>
-                                                                        <li><strong>URL Project:</strong> <a href="#">www.website.com</a></li>
-                                                                </ul>
+                                                        <ul class="meta">
+                                                                <li><strong>Date: </strong>  07 may 2012</li>
+                                                                <li><strong>Client: </strong>  Designmd</li>
+                                                                <li><strong>URL Project:</strong> <a href="#">www.website.com</a></li>
+                                                        </ul>
 
-                                                                </div>
+                                        </div>
 
-                                                                </article>
+                                </article>
 
-                                                                <!--BEGIN: divider arrow-->
-                                                                <div class="title-divider">
-                                                                        <div class="divider-arrow"></div>                                  
-                                                                        <h3>Realted Work</h3>       
-                                                                </div><!--END: divider arrow-->
+                                <!--BEGIN: divider arrow-->
+                                <div class="title-divider">
+                                        <div class="divider-arrow"></div>                                  
+                                        <h3>Realted Work</h3>       
+                                </div><!--END: divider arrow-->
 
-                                                                <div class="row da-thumbs">
+                                <div class="row da-thumbs">
 
-                                                                        <!--BEGIN: latest blog col 1 -->
-                                                                        <article class="span3">
-                                                                                <img src="example/latest1.jpg" alt="photo" />
-                                                                                <div>
-                                                                                        <a href="example/view.jpg" class="p-view"></a>
-                                                                                        <a href="portfolio-single.html" class="p-link"></a>
-                                                                                </div>
-                                                                        </article><!--END: latest blog col 1 -->
+                                        <!--BEGIN: latest blog col 1 -->
+                                        <article class="span3">
+                                                <img src="example/latest1.jpg" alt="photo" />
+                                                <div>
+                                                        <a href="example/view.jpg" class="p-view"></a>
+                                                        <a href="portfolio-single.html" class="p-link"></a>
+                                                </div>
+                                        </article><!--END: latest blog col 1 -->
 
-                                                                        <!--BEGIN: latest blog col 2 -->
-                                                                        <article class="span3">
-                                                                                <img src="example/latest2.jpg" alt="photo" />
-                                                                                <div>
-                                                                                        <a href="example/view.jpg" class="p-view"></a>
-                                                                                        <a href="portfolio-single.html" class="p-link"></a>
-                                                                                </div>
-                                                                        </article><!--END: latest blog col 2 -->
+                                        <!--BEGIN: latest blog col 2 -->
+                                        <article class="span3">
+                                                <img src="example/latest2.jpg" alt="photo" />
+                                                <div>
+                                                        <a href="example/view.jpg" class="p-view"></a>
+                                                        <a href="portfolio-single.html" class="p-link"></a>
+                                                </div>
+                                        </article><!--END: latest blog col 2 -->
 
-                                                                        <!--BEGIN: latest blog col 3 -->
-                                                                        <article class="span3">
-                                                                                <img src="example/latest3.jpg" alt="photo" />
-                                                                                <div>
-                                                                                        <a href="example/view.jpg" class="p-view"></a>
-                                                                                        <a href="portfolio-single.html" class="p-link"></a>
-                                                                                </div>
-                                                                        </article><!--END: latest blog col 3 -->
+                                        <!--BEGIN: latest blog col 3 -->
+                                        <article class="span3">
+                                                <img src="example/latest3.jpg" alt="photo" />
+                                                <div>
+                                                        <a href="example/view.jpg" class="p-view"></a>
+                                                        <a href="portfolio-single.html" class="p-link"></a>
+                                                </div>
+                                        </article><!--END: latest blog col 3 -->
 
-                                                                        <!--BEGIN: latest blog col 4 -->
-                                                                        <article class="span3">
-                                                                                <img src="example/latest4.jpg" alt="photo" />
-                                                                                <div>
-                                                                                        <a href="example/view.jpg" class="p-view"></a>
-                                                                                        <a href="portfolio-single.html" class="p-link"></a>
-                                                                                </div>
-                                                                        </article><!--END: latest blog col 4 -->
+                                        <!--BEGIN: latest blog col 4 -->
+                                        <article class="span3">
+                                                <img src="example/latest4.jpg" alt="photo" />
+                                                <div>
+                                                        <a href="example/view.jpg" class="p-view"></a>
+                                                        <a href="portfolio-single.html" class="p-link"></a>
+                                                </div>
+                                        </article><!--END: latest blog col 4 -->
 
-                                                                </div>
+                                </div>
 
 
-                                                                </div>    
-                                                                </section>
-
+                        </div>    
+                </section>
 
 
 
 
-                                                                <!-- END: container -->
+
+                <!-- END: container -->
 
 
-                                                                <!--BEGIN: sub nav-->
-                                                                <section id="footer-nav">
-                                                                        <div class="container">
-                                                                                <div class="row">
+                <!--BEGIN: sub nav-->
+                <section id="footer-nav">
+                        <div class="container">
+                                <div class="row">
 
-                                                                                        <p class="span4">Ebay Hackthon</p>
+                                        <p class="span4">Ebay Hackthon</p>
 
-                                                                                        <div class="span8 hidden-phone">
-                                                                                                <ul>
-                                                                                                        <li><a href="./index.html">Home</a></li>
-                                                                                                </ul>
-                                                                                        </div>
+                                        <div class="span8 hidden-phone">
+                                                <ul>
+                                                        <li><a href="./index.html">Home</a></li>
+                                                </ul>
+                                        </div>
 
-                                                                                </div>
-                                                                        </div>
-                                                                </section><!--END: sub nav-->
-                                                                <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
-                                                                </body>
-                                                                </html>
+                                </div>
+                        </div>
+                </section><!--END: sub nav-->
+                <div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+        </body>
+</html>
