@@ -10,7 +10,19 @@ and open the template in the editor.
 
 <struts>
         <package name="default" extends="struts-default">       
-            <action name="ebaySellerLogin" class="ebaySellerLoginAction"></action>
+            <action name="ebaySellerLogin" class="ebaySellerLoginAction">
+                    <result name="success">/jsp/index.jsp</result>
+            </action>
             <action name="getToken" class="getTokenAction"></action>
+
+            <action name="showAllItems" class="showAllItemsAction">
+                    <result name="success">/jsp/allItemsList.jsp</result>
+            </action>
+            <action name="showActiveItems" class="showActiveItemsAction">
+                    <result name="success">/jsp/activeItemsList.jsp</result>
+            </action>
+            <action name="showItem" class="showItemAction">
+                    <result name="success">/jsp/itemDetail.jsp</result>
+            </action>
         </package>
 </struts>

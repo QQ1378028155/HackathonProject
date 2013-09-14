@@ -12,5 +12,7 @@
         <form action="/HackathonProject/jsp/getToken.action">
             <input type="submit" value="Login"/>
         </form>
+        <a href="showAllItems.action">显示所有商品</a>
+        <a href="showActiveItems.action">显示Active商品</a>
     </body>
 </html>

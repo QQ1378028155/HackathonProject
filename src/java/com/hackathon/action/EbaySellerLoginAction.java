@@ -25,7 +25,7 @@ public class EbaySellerLoginAction extends ActionSupport {
         context.getSession().put("sid", sid);
         BareBonesBrowserLaunch.openURL(authUrl);
         
-        return null;
+        return "success";
     }
     
 }
